@@ -42,14 +42,14 @@ generalization error를 줄이는것
 만약 이를 지나 좀 더 훈련을 진행한다면 모델은 주어진 데이터를 완벽하게 따라가고, 모델의 위험도도 줄어들 것이다. 하지만 이 상태에서는 새로운 데이터에 대한 범용성을 확보할 수 없다. 주어진 데이터에만 과도하게 **편향(biased)** 되었기 때문이다. 이 상태를 **overfitting** 이라고 부른다.
 
 
->```python
+```python
 def f(x):  #risk function
     return x * torch.cos(np.pi * x)
 def g(x):  #emperical-risk function
     return f(x) + 0.2 * torch.cos(5 * np.pi * x)
 ```
 
->```python
+```python
 def annotate(text, xy, xytext):  #save
     d2l.plt.gca().annotate(text, xy=xy, xytext=xytext,
                            arrowprops=dict(arrowstyle='>'))
