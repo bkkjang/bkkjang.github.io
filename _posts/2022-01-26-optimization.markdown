@@ -9,7 +9,7 @@ category: sample
 ************
 ### Optimization
 
-딥러닝에서 **최적화(Optimization)**란 **손실 함수(Loss function)**의 값을 최소화 하는 파라미터 값을 찾는 것
+딥러닝에서 '최적화(Optimization)'란 '손실 함수(Loss function)'의 값을 최소화 하는 파라미터 값을 찾는 것
 
 ### Generalization
 **일반화(Generalization)**는 모델을 돌렸을 때, 
