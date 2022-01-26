@@ -141,7 +141,7 @@ annotate('global minimum', (1.1, -0.95), (0.6, 0.8))
 
 𝑓(𝑥)=𝑥<sup>3</sup> 에서 보았을 도함수는 𝑥=0일 때 사라진음 최소점이 아니더라도 이 시점에서 최적화가 멈출 수 있음
 
-더 높은 치수의 Saddle Points는 아래 예에서 알 수 있 듯이 (𝑥,𝑦)=𝑥<sup>2</sup>−𝑦<sup>2</sup>에서 saddle points는 (0,0)이고
+더 높은 치수의 Saddle Points는 아래 예에서 알 수 있 듯이 (𝑥,𝑦)=𝑥<sup>2</sup>−𝑦<sup>2</sup>에서 saddle points는 (0,0)
 
 ```python
 x, y = torch.meshgrid(
@@ -158,3 +158,4 @@ ax.set_zticks(ticks)
 d2l.plt.xlabel('x')
 d2l.plt.ylabel('y');
 ``` 
+![](https://d2l.ai/_images/output_optimization-intro_70d214_66_0.svg)
