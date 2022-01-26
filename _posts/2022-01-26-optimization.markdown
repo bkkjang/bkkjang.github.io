@@ -43,11 +43,11 @@ generalization error를 줄이는것
 
 ![](https://images.velog.io/images/bk4650/post/e3cb68ed-e14a-4538-9a59-f0ea663939af/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-20%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2010.54.32.png)
 
-주어진 한정된 데이터로 모델을 학습시킨다면, 초기 모델의 신뢰성(confidence) 는 매우 낮을 것이다. 그만큼 모델의 risk는 높다고 할 수 있다. 이둘의 간극을 모델 출력이 주어진 데이터를 따라가지 못한다고하여 **underfitting**이라고 부른다.
+주어진 한정된 데이터로 모델을 학습시킨다면, 초기 모델의 신뢰성(confidence) 는 매우 낮을 것이음 그만큼 모델의 risk는 높다고 할 수 있음 이둘의 간극을 모델 출력이 주어진 데이터를 따라가지 못한다고하여 **underfitting**이라고 부른음
 
-모델이 학습을 진행하다보면 cross over되는 순간이 온다. 이때는 모델이 주어진 데이터를 적절히 따라가면서 모델의 위험도도 적절히 낮다. **훈련을 멈춰야하는 순간**
+모델이 학습을 진행하다보면 cross over되는 순간이 온음 이때는 모델이 주어진 데이터를 적절히 따라가면서 모델의 위험도도 적절히 낮음 **훈련을 멈춰야하는 순간**
 
-만약 이를 지나 좀 더 훈련을 진행한다면 모델은 주어진 데이터를 완벽하게 따라가고, 모델의 위험도도 줄어들 것이다. 하지만 이 상태에서는 새로운 데이터에 대한 범용성을 확보할 수 없다. 주어진 데이터에만 과도하게 **편향(biased)** 되었기 때문이다. 이 상태를 **overfitting** 이라고 부른다.
+만약 이를 지나 좀 더 훈련을 진행한다면 모델은 주어진 데이터를 완벽하게 따라가고, 모델의 위험도도 줄어들 것이음 하지만 이 상태에서는 새로운 데이터에 대한 범용성을 확보할 수 없음 주어진 데이터에만 과도하게 **편향(biased)** 되었기 때문이음 이 상태를 **overfitting** 이라고 부름
 
 
 ```python
@@ -68,7 +68,7 @@ annotate('min of\nempirical risk', (1.0, -1.2), (0.5, -1.1))
 annotate('min of risk', (1.1, -1.05), (0.95, -0.5))
 ```
 
-아래 그래프는 훈련 데이터 세트에 대한 Empirical Risk의 최소값이 Risk의 최소값(일반화 오류)과 다른 위치에 있을 수 있음을 보여준다.
+아래 그래프는 훈련 데이터 세트에 대한 Empirical Risk의 최소값이 Risk의 최소값(일반화 오류)과 다른 위치에 있을 수 있음을 보여줌
 
 ![](https://images.velog.io/images/bk4650/post/f2946fea-691a-4ad5-b55e-6072af99c28e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%202.13.38.png)
 ************
@@ -92,7 +92,7 @@ annotate('min of risk', (1.1, -1.05), (0.95, -0.5))
 >
 **Numerical solutions**은 해를 추측하고 문제 해결을 멈출 만큼 충분히 잘 해결되었는지 테스트하는 것을 의미
 
-위의 문제에서 식을 풀기위해 numerical method를 사용해서 문제를 풀게 된다.
+위의 문제에서 식을 풀기위해 numerical method를 사용해서 문제를 풀게 됌
 
 시간에 따라 변화하는 미분 방정식을 풀 때, numerical method는 변수의 초기값에서 시작하고 식을 시간단위에 따라 변화는 이 변수들의 변화량를 찾는데 사용
 
@@ -108,15 +108,15 @@ Local minima, Saddle Points, Vanishing Gradients 등의 문제가 생길 수 있
 
 ### Local minima
 ****
-목적 함수 f(x)에 대해, x에서 f(x)의 값이 x 근처의 다른 점에서 f(x)의 값보다 작다면, f(x)는 Local minimum이 될 수 있다. 
+목적 함수 f(x)에 대해, x에서 f(x)의 값이 x 근처의 다른 점에서 f(x)의 값보다 작다면, f(x)는 Local minimum이 될 수 있음 
 
-만약 x에서 f(x)의 값이 전체 영역의 목적 함수의 최소값이라면, f(x)는 Global minimum이다.
+만약 x에서 f(x)의 값이 전체 영역의 목적 함수의 최소값이라면, f(x)는 Global minimum
 
-예를 들어, 주어진 함수는 다음과 같다.
+예를 들어, 주어진 함수는 다음과 같음
 
 $$f(x) = x \cdot \text{cos}(\pi x) \text{ for } -1.0 \leq x \leq 2.0,$$
 
-우리는 이 함수의 로컬 최소값과 전역 최소값을 근사할 수 있다.
+우리는 이 함수의 로컬 최소값과 전역 최소값을 근사할 수 있음
 
 ```python
 x = torch.arange(-1.0, 2.0, 0.01)
@@ -128,16 +128,33 @@ annotate('global minimum', (1.1, -0.95), (0.6, 0.8))
 
 ![](https://images.velog.io/images/bk4650/post/4f6a5a3a-ec38-4158-907f-faa2a4068dfd/image.png)
 
-딥러닝 모델의 objective function은 일반적으로 많은 Local minima을 가지고 있다.
+딥러닝 모델의 objective function은 일반적으로 많은 Local minima을 가지고 있음
 최적화 문제의 Numerical solution이 Local minima에 가까울 때, 기울기가 0에 근접하거나 0이 될 때 전역적이 아닌 국소적으로만 objective function을 최소화할 수 있음.
 
 어느 정도의 noise를 주는 것으로 Local minimum에서 벗어날 수 있다 (Simulated Annealing)
 
-실제로, 이것은 미니 배치에 대한 gradient의 자연스러운 변화가 Local minima에서 parameter를 제거할 수 있는 미니 배치 stochastic gradient descent의 유익한 특성 중 하나이다.
+실제로, 이것은 미니 배치에 대한 gradient의 자연스러운 변화가 Local minima에서 parameter를 제거할 수 있는 미니 배치 stochastic gradient descent의 유익한 특성 중 하나이음
 
 
 ### Saddle Points
 
 
-𝑓(𝑥)=𝑥<sup>3</sup> 에서 보았을 때
-  
+𝑓(𝑥)=𝑥<sup>3</sup> 에서 보았을 도함수는 𝑥=0일 때 사라진음 최소점이 아니더라도 이 시점에서 최적화가 멈출 수 있음
+
+더 높은 치수의 Saddle Points는 아래 예에서 알 수 있 듯이 (𝑥,𝑦)=𝑥<sup>2</sup>−𝑦<sup>2</sup>에서 saddle points는 (0,0)이고
+
+```python
+x, y = torch.meshgrid(
+    torch.linspace(-1.0, 1.0, 101), torch.linspace(-1.0, 1.0, 101))
+z = x**2 - y**2
+
+ax = d2l.plt.figure().add_subplot(111, projection='3d')
+ax.plot_wireframe(x, y, z, **{'rstride': 10, 'cstride': 10})
+ax.plot([0], [0], [0], 'rx')
+ticks = [-1, 0, 1]
+d2l.plt.xticks(ticks)
+d2l.plt.yticks(ticks)
+ax.set_zticks(ticks)
+d2l.plt.xlabel('x')
+d2l.plt.ylabel('y');
+``` 
