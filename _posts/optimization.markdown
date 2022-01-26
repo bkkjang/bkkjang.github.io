@@ -2,7 +2,7 @@
 layout: post
 title: optimization
 date: 2022-01-26 19:20:23 +0900
-category: sample
+category: Deep learning
 ---
 
 
