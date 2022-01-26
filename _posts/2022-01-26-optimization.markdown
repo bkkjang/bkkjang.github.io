@@ -70,7 +70,7 @@ annotate('min of risk', (1.1, -1.05), (0.95, -0.5))
 
 아래 그래프는 훈련 데이터 세트에 대한 Empirical Risk의 최소값이 Risk의 최소값(일반화 오류)과 다른 위치에 있을 수 있음을 보여줌
 
-![](https://images.velog.io/images/bk4650/post/f2946fea-691a-4ad5-b55e-6072af99c28e/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%202.13.38.png)
+![](https://d2l.ai/_images/output_optimization-intro_70d214_30_0.svg)
 ************
 ### Optimization Challenges in Deep Learning
 
@@ -124,7 +124,7 @@ d2l.plot(x, [f(x), ], 'x', 'f(x)')
 annotate('local minimum', (-0.3, -0.25), (-0.77, -1.0))
 annotate('global minimum', (1.1, -0.95), (0.6, 0.8))
 ```
-![](https://d2l.ai/_images/output_optimization-intro_70d214_30_0.svg)
+
 
 ![](https://d2l.ai/_images/output_optimization-intro_70d214_42_0.svg)
 
