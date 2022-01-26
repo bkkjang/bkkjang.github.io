@@ -119,6 +119,7 @@ annotate('global minimum', (1.1, -0.95), (0.6, 0.8))
 ![](https://images.velog.io/images/bk4650/post/676dd550-7c36-4c85-a9da-31deb2ace521/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.18.40.png)
 
 ![](https://images.velog.io/images/bk4650/post/4f6a5a3a-ec38-4158-907f-faa2a4068dfd/image.png)
+
 딥러닝 모델의 objective function은 일반적으로 많은 Local minima을 가지고 있다.
 최적화 문제의 Numerical solution이 Local minima에 가까울 때, 기울기가 0에 근접하거나 0이 될 때 전역적이 아닌 국소적으로만 objective function을 최소화할 수 있음.
 
