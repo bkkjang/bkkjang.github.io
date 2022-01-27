@@ -196,3 +196,20 @@ y축 방향에서 보면 극대점을 갖는 것처럼 보이는데 x축 방향�
 H −λI 의 행렬식이 0이 되게 하는 λ 들을 찾음 
 고유값 구하는 것과 관련해서는 https://bskyvision.com/59를 참고
 https://bskyvision.com/661
+
+
+### Vanishing Gradients
+
+예를 들어, 우리가 함수 𝑓(𝑥)=tanh(𝑥)를 최소화할 때 
+𝑥=4 지점에서 보이듯이 𝑓의 기울기는 0에 가까움  
+𝑓′(𝑥)=1−tanh2(𝑥)이고, 𝑓′(4)=0.0013
+결과적으로 최적화 과정에서 오랜 시간 동안 고착될 수 있음.
+
+```python
+
+x = torch.arange(-2.0, 5.0, 0.01)
+d2l.plot(x, [torch.tanh(x)], 'x', 'f(x)')
+annotate('vanishing gradient', (4, 1), (2, 0.0))
+
+```
+![](https://d2l.ai/_images/output_optimization-intro_70d214_78_0.svg)
